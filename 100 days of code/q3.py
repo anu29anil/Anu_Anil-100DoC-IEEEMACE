@@ -1,10 +1,10 @@
 list1=[1,2,3]
-numbers=input("Enter the number:")
-for i in numbers:
-    if i.isdigit():
+numbers=eval(input("Enter the number:"))
+if type(numbers)==int:
+    list1.append(numbers)
+else:
+    for i in numbers:
         inp=int(i)
         list1.append(inp)
-    else:
-        continue
     
 print(list1)
